@@ -210,7 +210,7 @@ body {
   line-height: 1.2; /* Висота рядка */
   letter-spacing: 0.02em; /* Відстань між літерами */
   color: #2e2f42; /* Колір тексту */
-  margin-top: 8px;
+  margin-bottom: 8px; /* Нижній марджен */
 }
 
 .list-paragraph {
@@ -372,16 +372,16 @@ body {
 
 .drei-team-name {
   /* Стиль заголовка H3 */
-  font-family: Roboto; /* Шрифт Roboto */
-  font-size: 20px; /* Розмір шрифту 20px */
+  font-family: Roboto; /* Шрифт: Roboto */
+  font-size: 20px; /* Розмір шрифту: 20px */
   font-weight: 500; /* Напівжирний шрифт */
-  line-height: 24px; /* Висота рядка 24px */
-  letter-spacing: 0.02em; /* Міжлітерний інтервал 0.02em */
+  line-height: 24px; /* Висота рядка: 24px */
+  letter-spacing: 0.02em; /* Міжлітерний інтервал: 0.02em */
   text-align: center; /* Вирівнювання тексту по центру */
   text-underline-position: from-font; /* Позиція підкреслення залежить від шрифту */
   text-decoration-skip-ink: none; /* Підкреслення не пропускає чорнило */
-  margin-bottom: 8px; /* Нижній відступ 8px */
-  margin-top: 0; /* Верхній відступ 0 */
+  margin-bottom: 8px; /* Нижній відступ: 8px */
+  margin-top: 0; /* Верхній відступ: 0 */
 }
 
 .drei-team-role {
