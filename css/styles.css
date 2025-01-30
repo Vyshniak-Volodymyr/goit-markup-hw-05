@@ -859,124 +859,117 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
 
 /* Модальне вікно */
 
+/* Контейнер для модального вікна */
 .modal-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(46, 47, 66, 0.4);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: fixed; /* Фіксована позиція */
+  top: 0; /* Відстань від верхньої межі */
+  left: 0; /* Відстань від лівої межі */
+  width: 100%; /* Ширина 100% */
+  height: 100%; /* Висота 100% */
+  background-color: rgba(46, 47, 66, 0.4); /* Напівпрозорий фон */
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Плавні зміни прозорості та видимості */
 }
 
-.modal-window {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 408px;
-  min-height: 584px;
-  background: #fcfcfc;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+/* Модальне вікно */
+.modal {
+  position: absolute; /* Абсолютне позиціонування */
+  top: 50%; /* Центрування по вертикалі */
+  left: 50%; /* Центрування по горизонталі */
+  transform: translate(-50%, -50%); /* Центрування елемента */
+  width: 408px; /* Ширина модального вікна */
+  min-height: 584px; /* Мінімальна висота */
+  background: #fcfcfc; /* Колір фону */
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2); /* Тінь */
+  border-radius: 4px; /* Закруглені кути */
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Плавна зміна трансформації */
+  padding: 72px 24px 24px 24px; /* Внутрішні відступи */
 }
 
+/* Кнопка закриття */
 .close-button {
-  position: absolute;
-  top: 24px;
-  right: 24px;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #e7e9fc;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 0;
-  cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: absolute; /* Абсолютне позиціонування */
+  top: 24px; /* Відстань від верхньої межі */
+  right: 24px; /* Відстань від правої межі */
+  width: 24px; /* Ширина кнопки */
+  height: 24px; /* Висота кнопки */
+  border-radius: 50%; /* Круглі кути */
+  display: flex; /* Використовує flexbox для вирівнювання */
+  align-items: center; /* Вирівнювання по вертикалі */
+  justify-content: center; /* Вирівнювання по горизонталі */
+  background-color: #e7e9fc; /* Колір фону кнопки */
+  border: 1px solid rgba(0, 0, 0, 0.1); /* Колір та стиль бордера */
+  padding: 0; /* Обнулення відступів */
+  cursor: pointer; /* Курсор "pointer" при наведенні */
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Плавна зміна фону і бордера */
 }
 
 .close-button:hover {
-  background-color: #404bbf;
-  border: none;
+  background-color: #404bbf; /* Зміна фону при ховері */
+  border: none; /* Обнулення бордера при ховері */
 }
 
 .close-button:focus {
-  background-color: #404bbf;
-  border: none;
+  background-color: #404bbf; /* Зміна фону при фокусі */
+  border: none; /* Обнулення бордера при фокусі */
 }
 
-.close-button .icon {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+/* Іконка в кнопці */
+.icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Плавна зміна кольору */
 }
 
 .close-button:hover .icon,
 .close-button:focus .icon {
-  fill: #ffffff;
+  fill: #ffffff; /* Зміна кольору іконки при ховері та фокусі */
 }
 
-.modal-content {
-  padding: 72px 24px 24px 24px;
-}
-
+/* Параграф тексту в модальному вікні */
 .modal-text {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-  margin-bottom: 16px;
+  font-weight: 500; /* Жирність шрифту */
+  font-size: 16px; /* Розмір шрифту */
+  line-height: 1.5; /* Висота рядка */
+  text-align: center; /* Центрування тексту */
+  letter-spacing: 0.02em; /* Відстань між літерами */
+  color: var(--text-color, #2E2F42); /* Колір шрифту з змінної */
+  margin-bottom: 16px; /* Відступ знизу */
 }
 
-.modal-form {
-  display: flex;
-  flex-direction: column;
+/* Форма в модальному вікні */
+.form-group {
+  margin-bottom: 8px; /* Відступ між елементами форми */
 }
 
-.form-field {
-  margin-bottom: 16px;
+/* Лейбли */
+.label {
+  font-size: 12px; /* Розмір шрифту */
+  line-height: 1.17; /* Висота рядка */
+  letter-spacing: 0.04em; /* Відстань між літерами */
+  color: var(--label-color, #8e8f99); /* Колір тексту */
+  display: block; /* Відображення блочним елементом */
+  margin-bottom: 4px; /* Відступ знизу */
 }
 
-.form-label {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: #8e8f99;
-  display: block;
-  margin-bottom: 4px;
+/* Поля вводу */
+.input {
+  width: 100%; /* Ширина 100% */
+  height: 40px; /* Висота поля */
+  border: 1px solid rgba(46, 47, 66, 0.4); /* Бордер */
+  border-radius: 4px; /* Закруглення кутів */
+  background-color: transparent; /* Прозорий фон */
+  padding-left: 38px; /* Відступ зліва для тексту */
+  outline: transparent; /* Прозорий контур */
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Плавна зміна кольору бордера */
 }
 
-.input-container {
-  position: relative;
+.input:focus {
+  border-color: #4D5AE5; /* Колір бордера при фокусі */
 }
 
-.input-field {
-  width: 100%;
-  height: 40px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  border-radius: 4px;
-  background-color: transparent;
-  padding-left: 38px;
-  outline: transparent;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.input-field:focus {
-  border-color: #4d5ae5;
-}
-
+/* Іконка всередині полів вводу */
 .input-icon {
-  position: absolute;
-  left: 16px;
-  top: 50%;
-  transform: translateY(-50%);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.input-field:focus + .input-icon {
-  fill: #4d5ae5;
+  position: absolute; /* Абсолютне позиціонування */
+  left: 16px; /* Відстань від лівого краю */
+  top: 50%; /* Центрування по вертикалі */
+  transform: translateY(-50%); /* Центрування по вертикалі */
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Плавна зміна кольору */
 }
