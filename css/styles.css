@@ -50,10 +50,13 @@ body {
 .container-footer {
   width: 1158px; /* Фіксована ширина контейнера */
   margin: 0 auto; /* Центрування по горизонталі */
-  padding: 0 15px; /* Внутрішні відступи по горизонталі */
-  display: flex;
-  align-items: baseline;
+  padding: 0 15px; /* Внутрішні відступи */
+  display: flex; /* Використовуємо flexbox для організації елементів всередині контейнера */
+  align-items: baseline; /* Вирівнювання елементів по їх базовій лінії */
+  justify-content: space-between; /* Відстань між елементами однакова, перший і третій контейнер на краях */
 }
+
+
 
 .nav-container {
   display: flex; /* Встановлює флексбокс для елементів */
@@ -497,10 +500,6 @@ body {
   color: #f4f4fd; /* Встановлює світлий колір тексту для футера */
 }
 
-.content-wrapper {
-  margin-right: 120px; /* Додає правий відступ на 120 пікселів для контейнера контенту */
-}
-
 /* Опис у футері */
 .footer-description {
   margin-top: 0; /* Обнуляє верхній марж */
@@ -852,4 +851,8 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
   border-radius: 4px; /* Визначає радіус закруглення кутів кнопки */
 }
 
-
+/* або padding-left: 20px; 
+.subscribe-wrapper {
+  margin-left: 100px; /* або padding-left: 20px; */
+}
+*/
