@@ -834,3 +834,11 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
 .subscribe-input::placeholder {
   color: #ffffff; /* встановлює колір тексту для placeholder */
 }
+
+.subscribe-button {
+  min-width: 165px; /* Мінімальна ширина кнопки */
+  height: 40px; /* Висота кнопки */
+  display: flex; /* Гнучке розташування дочірніх елементів */
+  justify-content: center; /* Вирівнювання контенту по горизонталі */
+  align-items: center; /* Вирівнювання контенту по вертикалі */
+}
