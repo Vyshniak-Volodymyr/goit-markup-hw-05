@@ -818,19 +818,19 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
 }
 
 .subscribe-input {
-  width: 264px;
-  height: 40px;
-  border: 1px solid #ffffff;
-  background-color: transparent;
-  font-size: 12px;
-  line-height: 2;
-  letter-spacing: 0.04em;
-  padding-left: 16px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  color: #ffffff;
+  width: 264px; /* встановлює ширину елемента */
+  height: 40px; /* встановлює висоту елемента */
+  border: 1px solid #ffffff; /* задає стиль, ширину та колір межі */
+  background-color: transparent; /* визначає колір фону */
+  font-size: 12px; /* встановлює розмір шрифту */
+  line-height: 2; /* визначає простір між рядками */
+  letter-spacing: 0.04em; /* встановлює відстань між літерами */
+  padding-left: 16px; /* додає внутрішній відступ зліва */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); /* додає тінь до елемента */
+  border-radius: 4px; /* закруглює кути елемента */
+  color: #ffffff; /* встановлює колір тексту */
 }
 
 .subscribe-input::placeholder {
-  color: #ffffff;
+  color: #ffffff; /* встановлює колір тексту для placeholder */
 }
