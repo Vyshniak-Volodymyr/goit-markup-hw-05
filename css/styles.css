@@ -958,7 +958,9 @@ h6 {
 
 .input-container {
   position: relative;
-
+  /***/
+  display: flex;
+  align-items: center;
 }
 
 /* Поля вводу */
@@ -986,3 +988,7 @@ h6 {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Плавна зміна кольору */
 }
 
+/* Зміна кольору іконки при фокусі */
+.input:focus + .input-icon {
+  fill: #4d5ae5;
+}
