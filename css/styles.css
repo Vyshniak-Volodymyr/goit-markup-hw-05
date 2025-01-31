@@ -1028,3 +1028,52 @@ h6 {
   text-transform: lowercase; /* Перетворює текст на маленькі літери */
   letter-spacing: 0.04em; /* Визначає відстань між літерами в span, якщо потрібно */
 }
+
+.checkbox-label .privacy-policy-link {
+  color: var(--link-color, #4d5ae5); /* Колір посилання */
+}
+
+.checkbox-label .privacy-policy-link-text {
+  text-decoration: none; /* Відключення підкреслення для тексту посилання */
+}
+
+.checkbox-label .privacy-policy-link-text:hover {
+  text-decoration: underline; /* Підкреслення при наведенні на посилання */
+}
+
+.checkbox-container input[type="checkbox"]:checked + label span {
+  background-color: var(
+    --checked-bg,
+    #404bbf
+  ); /* Колір фону при виборі чекбоксу */
+  border: none; /* Без рамки */
+  fill: var(
+    --checked-fill,
+    #f4f4fd
+  ); /* Колір заповнення для вибраного чекбоксу */
+}
+
+.checkbox-label span svg {
+  width: 10px; /* Ширина SVG-іконки */
+  height: 8px; /* Висота SVG-іконки */
+}
+
+.submit-button {
+  display: block; /* Відображення кнопки як блоку */
+  min-width: 169px; /* Мінімальна ширина кнопки */
+  height: 56px; /* Висота кнопки */
+  font-family: "Roboto", sans-serif; /* Шрифт кнопки */
+  font-size: 16px; /* Розмір шрифта */
+  font-weight: 500; /* Вага шрифта */
+  line-height: 1.5; /* Висота рядка */
+  letter-spacing: 0.04em; /* Відстань між літерами */
+  color: #ffffff; /* Колір тексту кнопки */
+  cursor: pointer; /* Курсор при наведенні */
+  background-color: #4d5ae5; /* Колір фону кнопки */
+  border: none; /* Без рамки */
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Анімація переходу кольору фону */
+}
+
+.submit-button:hover {
+  background-color: #3b4bbf; /* Колір фону кнопки при наведенні */
+}
