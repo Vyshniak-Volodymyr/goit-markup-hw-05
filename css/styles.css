@@ -56,8 +56,6 @@ body {
   justify-content: space-between; /* Відстань між елементами однакова, перший і третій контейнер на краях */
 }
 
-
-
 .nav-container {
   display: flex; /* Встановлює флексбокс для елементів */
   align-items: center; /* Вирівнює елементи по вертикалі */
@@ -638,16 +636,18 @@ h6 {
   padding: 0;
 }
 
-box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-  /* Легка тінь з невеликим розмиттям */ 0px 1px 1px rgba(46, 47, 66, 0.16),
-  /* Тінь з більшим розмиттям та темнішим кольором */ 0px 1px 6px
-    rgba(46, 47, 66, 0.08); /* Тінь, що створює ефект глибини, з помірним розмиттям */
+.box-shadow {
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    /* Легка тінь з невеликим розмиттям */ 0px 1px 1px rgba(46, 47, 66, 0.16),
+    /* Тінь з більшим розмиттям та темнішим кольором */ 0px 1px 6px
+      rgba(46, 47, 66, 0.08); /* Тінь, що створює ефект глибини, з помірним розмиттям */
+}
 
 /* Тінь та закруглення для першого елемента списку */
 .first-team-member {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    /* Легка тінь з помірним розмиттям */ 0px 1px 1px rgba(46, 47, 66, 0.16),
-    /* Тінь з більш вираженим розмиттям */ 0px 2px 1px rgba(46, 47, 66, 0.08); /* Легка тінь з розмиттям */
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    /* Легка тінь з розмиттям */ 0px 1px 1px rgba(46, 47, 66, 0.16),
+    /* Тінь з більш вираженим розмиттям */ 0px 1px 6px rgba(46, 47, 66, 0.08); /* Легка тінь з помірним розмиттям */
   border-radius: 0px 0px 4px 4px; /* Закруглює нижні кути елемента */
 }
 
@@ -801,7 +801,7 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     #f4f4fd
   ); /* Встановлює колір іконок, за замовчуванням світло-сірий */
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Анімація зміни кольору фону */
-  }
+}
 
 .subscribe-text {
   margin-bottom: 16px; /* Відступ між параграфом та наступним елементом */
@@ -851,12 +851,6 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
   border-radius: 4px; /* Визначає радіус закруглення кутів кнопки */
 }
 
-/* або padding-left: 20px; 
-.subscribe-wrapper {
-  margin-left: 100px; /* або padding-left: 20px; */
-}
-*/
-
 /* Модальне вікно */
 
 /* Контейнер для модального вікна */
@@ -867,7 +861,8 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
   width: 100%; /* Ширина 100% */
   height: 100%; /* Висота 100% */
   background-color: rgba(46, 47, 66, 0.4); /* Напівпрозорий фон */
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Плавні зміни прозорості та видимості */
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Плавні зміни прозорості та видимості */
 }
 
 /* Модальне вікно */
@@ -879,7 +874,8 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
   width: 408px; /* Ширина модального вікна */
   min-height: 584px; /* Мінімальна висота */
   background: #fcfcfc; /* Колір фону */
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2); /* Тінь */
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2); /* Тінь */
   border-radius: 4px; /* Закруглені кути */
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Плавна зміна трансформації */
   padding: 72px 24px 24px 24px; /* Внутрішні відступи */
@@ -900,7 +896,8 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
   border: 1px solid rgba(0, 0, 0, 0.1); /* Колір та стиль бордера */
   padding: 0; /* Обнулення відступів */
   cursor: pointer; /* Курсор "pointer" при наведенні */
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Плавна зміна фону і бордера */
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Плавна зміна фону і бордера */
 }
 
 .close-button:hover {
@@ -930,7 +927,7 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
   line-height: 1.5; /* Висота рядка */
   text-align: center; /* Центрування тексту */
   letter-spacing: 0.02em; /* Відстань між літерами */
-  color: var(--text-color, #2E2F42); /* Колір шрифту з змінної */
+  color: var(--text-color, #2e2f42); /* Колір шрифту з змінної */
   margin-bottom: 16px; /* Відступ знизу */
 }
 
@@ -962,7 +959,7 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
 }
 
 .input:focus {
-  border-color: #4D5AE5; /* Колір бордера при фокусі */
+  border-color: #4d5ae5; /* Колір бордера при фокусі */
 }
 
 /* Іконка всередині полів вводу */
