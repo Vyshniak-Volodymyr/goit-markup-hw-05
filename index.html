@@ -523,19 +523,14 @@
 
     <!-- Контейнер для модального вікна -->
     <div class="modal-container">
-      <!-- Модальне вікно -->
       <div class="modal">
-        <!-- Кнопка закриття модального вікна -->
         <button class="close-button" type="button">
           <svg width="8" height="8" class="icon">
             <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
-        <!-- Параграф тексту -->
         <p class="modal-text">Leave your contacts and we will call you back</p>
-        <!-- Форма в модальному вікні -->
         <form action="#">
-          <!-- Контейнер для input "Name" -->
           <div class="form-group">
             <label for="user-name" class="label">Name</label>
             <div class="input-container">
@@ -550,7 +545,6 @@
               </svg>
             </div>
           </div>
-          <!-- Контейнер для input "Phone" -->
           <div class="form-group">
             <label for="user-phone" class="label">Phone</label>
             <div class="input-container">
@@ -565,7 +559,6 @@
               </svg>
             </div>
           </div>
-          <!-- Контейнер для input "Email" -->
           <div class="form-group">
             <label for="user-email" class="label">Email</label>
             <div class="input-container">
@@ -580,7 +573,6 @@
               </svg>
             </div>
           </div>
-          <!-- Контейнер для textarea "Comment" -->
           <div class="form-group-comment">
             <label for="user-comment" class="label">Comment</label>
             <textarea
@@ -590,7 +582,6 @@
               class="textarea"
             ></textarea>
           </div>
-          <!-- Контейнер для чекбоксу -->
           <div class="checkbox-container" style="margin-bottom: 24px">
             <input
               type="checkbox"
@@ -599,10 +590,14 @@
               value="true"
               class="visually-hidden"
             />
-            <label for="user-privacy" class="checkbox-label"
-              >I accept the terms and conditions of the</label
-            >
+            <label for="user-privacy" class="checkbox-label">
+              I accept the terms and conditions of the
+              <span class="privacy-policy-link">
+                <a href="#" class="privacy-policy-link-text">Privacy Policy</a>
+              </span>
+            </label>
           </div>
+          <button type="submit" class="submit-button">Submit</button>
         </form>
       </div>
     </div>
