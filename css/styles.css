@@ -944,6 +944,9 @@ h6 {
   color: var(--label-color, #8e8f99); /* Колір тексту */
   display: block; /* Відображення блочним елементом */
   margin-bottom: 4px; /* Відступ знизу */
+}
+
+.input-container {
   position: relative;
 }
 
