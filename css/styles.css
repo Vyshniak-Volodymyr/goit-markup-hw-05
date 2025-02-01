@@ -818,6 +818,7 @@ h6 {
 .subscribe-icon {
   margin-left: 16px;
   fill: white;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); /* плавна зміна кольору */
 }
 
 .subscribe-text {
@@ -1088,6 +1089,7 @@ h6 {
   background-color: #4d5ae5; /* Колір фону кнопки */
   border: none; /* Без рамки */
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Анімація переходу кольору фону */
+
 }
 
 .privacy-policy-link {
