@@ -1131,11 +1131,11 @@ h6 {
 }
 
 :root {
-  --link-color: #4d5ae5;
+  --primary-color: #404bbf; /* Визначаємо змінну */
 }
 
-:root {
-  --primary-color: #4d5ae5;
+input:checked + .toggle-span {
+  background-color: var(--primary-color); /* Використовуємо змінну */
 }
 
 .privacy_policy-link {
