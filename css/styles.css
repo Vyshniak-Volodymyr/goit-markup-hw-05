@@ -1080,3 +1080,13 @@ h6 {
 }
 
 
+.privacy-policy-link {
+  color: #2e2f42; /* Темний відтінок тексту */
+  text-decoration: underline; /* Підкреслення для посилання */
+  cursor: pointer; /* Вказівник миші */
+  transition: color 250ms ease-in-out;
+}
+
+.privacy-policy-link:hover {
+  color: #007bff; /* Зміна кольору при наведенні */
+}
