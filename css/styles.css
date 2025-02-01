@@ -751,9 +751,15 @@ h6 {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.icon {
+.icon-xsymbol {
   width: 8px; /* Ширина логотипа */
   height: 8px; /* Висота логотипа */
+  opacity: 1; /* Логотип повністю видимий */
+}
+
+.icon {
+  width: 64px; /* Ширина логотипа */
+  height: 64px; /* Висота логотипа */
   opacity: 1; /* Логотип повністю видимий */
 }
 
@@ -1116,7 +1122,5 @@ h6 {
 }
 
 .checkbox-container input:checked + label .checkbox-custom svg {
-  fill: var(--icon-color, #F4F4FD);
+  fill: var(--icon-color, #f4f4fd);
 }
-
-
