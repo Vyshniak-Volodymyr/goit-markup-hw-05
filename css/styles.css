@@ -1129,3 +1129,11 @@ h6 {
 .checkbox-container input:checked + label .checkbox-custom svg {
   fill: var(--icon-color, #f4f4fd);
 }
+
+:root {
+  --link-color: #4d5ae5;
+}
+
+.privacy_policy-link {
+  color: var(--link-color);
+}
