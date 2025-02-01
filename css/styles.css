@@ -1031,20 +1031,16 @@ h6 {
   font-size: 12px; /* Визначає розмір шрифту */
   line-height: 1.17; /* Визначає висоту рядка, відстань між рядками */
   letter-spacing: 0.04em; /* Визначає відстань між літерами */
-  color: var(
-    --text-color,
-    #8e8f99
-  ); /* Визначає колір тексту (основний колір) */
+  color: var(--text-color, #8e8f99); /* Визначає колір тексту (основний колір) */
   text-transform: capitalize; /* Перетворює першу літеру кожного слова на велику */
-  color: var(
-    --link-color,
-    #4d5ae5
-  ); /* Колір тексту (якщо використовується посилання) */
   text-decoration: none; /* Прибирає підкреслення за замовчуванням */
 }
 
-.checkbox-label:hover {
-  text-decoration: underline; /* Додає підкреслення при наведенні */
+
+.checkbox-label:hover,
+.checkbox-label:focus {
+  text-decoration: underline; /* Підкреслення на hover або focus */
+  outline: none; /* Прибирає стандартне підсвічування при фокусуванні */
 }
 
 .checkbox-container input[type="checkbox"]:checked + label span {
@@ -1118,9 +1114,6 @@ h6 {
   fill: var(--secondary-color, #f4f4fd); /* Колір іконки при виборі */
 }
 
-.checkbox-label {
-  color: #000; /* Чорний колір тексту */
-}
 
 .checkbox-custom svg {
   width: 10px; /* Ширина SVG-іконки */
