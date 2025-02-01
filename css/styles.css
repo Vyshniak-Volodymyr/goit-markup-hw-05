@@ -1137,3 +1137,16 @@ h6 {
 .privacy_policy-link {
   color: var(--link-color);
 }
+
+:root {
+  --primary-color: #4d5ae5;
+}
+
+.privacy_policy-link {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.privacy_policy-link:hover {
+  text-decoration: underline;
+}
