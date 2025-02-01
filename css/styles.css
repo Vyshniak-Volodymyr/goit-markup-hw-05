@@ -1127,6 +1127,10 @@ h6 {
   height: 8px; /* Висота SVG-іконки */
 }
 
+.checkbox-container {
+  margin-bottom: 24px;
+}
+
 .checkbox-container input:checked + label .checkbox-custom svg {
   fill: var(--icon-color, #f4f4fd); /* Колір іконки при активному чекбоксі */
 }
