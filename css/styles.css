@@ -1031,17 +1031,16 @@ h6 {
   font-size: 12px; /* Визначає розмір шрифту */
   line-height: 1.17; /* Визначає висоту рядка, відстань між рядками */
   letter-spacing: 0.04em; /* Визначає відстань між літерами */
-  color: var(
-    --text-color,
-    #8e8f99
-  ); /* Визначає колір тексту за допомогою CSS змінної (якщо змінна не задана, використовується значення #8e8f99) */
-  /* Клас для span може бути, наприклад, .label-text */
-  text-transform: lowercase; /* Перетворює текст на маленькі літери */
-  letter-spacing: 0.04em; /* Визначає відстань між літерами в span, якщо потрібно */
-  color: var(--link-color, #4d5ae5); /* Колір посилання */
-  text-decoration: none; /* Відключення підкреслення для тексту посилання */
-  text-decoration: underline; /* Підкреслення при наведенні на посилання */
+  color: var(--text-color, #8e8f99); /* Визначає колір тексту (основний колір) */
+  text-transform: capitalize; /* Перетворює першу літеру кожного слова на велику */
+  color: var(--link-color, #4d5ae5); /* Колір тексту (якщо використовується посилання) */
+  text-decoration: none; /* Прибирає підкреслення за замовчуванням */
+  }
+
+.checkbox-label:hover {
+  text-decoration: underline; /* Додає підкреслення при наведенні */
 }
+
 
 .checkbox-container input[type="checkbox"]:checked + label span {
   background-color: var(
@@ -1080,7 +1079,7 @@ h6 {
 }
 
 .privacy-policy-link {
-  color: #2e2f42; /* Темний відтінок тексту */
+  color: #4d5ae5; /* Темний відтінок тексту */
   text-decoration: underline; /* Підкреслення для посилання */
   cursor: pointer; /* Вказівник миші */
   transition: color 250ms ease-in-out;
@@ -1130,12 +1129,8 @@ input:checked + .toggle-span {
 .privacy_policy-link {
   color: var(--primary-color); /* Колір посилання */
   text-decoration: none; /* Відсутність підкреслення */
-}
+  }
 
 .privacy_policy-link:hover {
   text-decoration: underline; /* Підкреслення при наведенні */
-}
-
-.privacy-policy_link {
-  color: var(--primary-color); /* Колір посилання */
 }
