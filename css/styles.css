@@ -1037,10 +1037,8 @@ h6 {
 }
 
 
-.checkbox-label:hover,
-.checkbox-label:focus {
-  text-decoration: underline; /* Підкреслення на hover або focus */
-  outline: none; /* Прибирає стандартне підсвічування при фокусуванні */
+.checkbox-label:hover {
+  text-decoration: underline; /* Додає підкреслення при наведенні */
 }
 
 .checkbox-container input[type="checkbox"]:checked + label span {
