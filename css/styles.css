@@ -1031,16 +1031,21 @@ h6 {
   font-size: 12px; /* Визначає розмір шрифту */
   line-height: 1.17; /* Визначає висоту рядка, відстань між рядками */
   letter-spacing: 0.04em; /* Визначає відстань між літерами */
-  color: var(--text-color, #8e8f99); /* Визначає колір тексту (основний колір) */
+  color: var(
+    --text-color,
+    #8e8f99
+  ); /* Визначає колір тексту (основний колір) */
   text-transform: capitalize; /* Перетворює першу літеру кожного слова на велику */
-  color: var(--link-color, #4d5ae5); /* Колір тексту (якщо використовується посилання) */
+  color: var(
+    --link-color,
+    #4d5ae5
+  ); /* Колір тексту (якщо використовується посилання) */
   text-decoration: none; /* Прибирає підкреслення за замовчуванням */
-  }
+}
 
 .checkbox-label:hover {
   text-decoration: underline; /* Додає підкреслення при наведенні */
 }
-
 
 .checkbox-container input[type="checkbox"]:checked + label span {
   background-color: var(
@@ -1078,8 +1083,12 @@ h6 {
   margin: 0 auto; /* Центруємо кнопку по горизонталі */
 }
 
+:root {
+  --link-color: #4d5ae5; /* Змінна для кольору посилання */
+}
+
 .privacy-policy-link {
-  color: #4d5ae5; /* Темний відтінок тексту */
+  color: var(--link-color); /* Використання змінної для кольору */
   text-decoration: underline; /* Підкреслення для посилання */
   cursor: pointer; /* Вказівник миші */
   transition: color 250ms ease-in-out;
@@ -1109,6 +1118,10 @@ h6 {
   fill: var(--secondary-color, #f4f4fd); /* Колір іконки при виборі */
 }
 
+.checkbox-label {
+  color: #000; /* Чорний колір тексту */
+}
+
 .checkbox-custom svg {
   width: 10px; /* Ширина SVG-іконки */
   height: 8px; /* Висота SVG-іконки */
@@ -1118,10 +1131,6 @@ h6 {
   fill: var(--icon-color, #f4f4fd); /* Колір іконки при активному чекбоксі */
 }
 
-:root {
-  --primary-color: #404bbf; /* Головний колір (CSS-змінна) */
-}
-
 input:checked + .toggle-span {
   background-color: var(--primary-color); /* Фон активного елемента */
 }
@@ -1129,7 +1138,7 @@ input:checked + .toggle-span {
 .privacy_policy-link {
   color: var(--primary-color); /* Колір посилання */
   text-decoration: none; /* Відсутність підкреслення */
-  }
+}
 
 .privacy_policy-link:hover {
   text-decoration: underline; /* Підкреслення при наведенні */
