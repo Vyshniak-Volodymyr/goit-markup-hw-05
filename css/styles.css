@@ -1035,28 +1035,12 @@ h6 {
     --text-color,
     #8e8f99
   ); /* Визначає колір тексту за допомогою CSS змінної (якщо змінна не задана, використовується значення #8e8f99) */
-}
-
-.checkbox-label span {
   /* Клас для span може бути, наприклад, .label-text */
   text-transform: lowercase; /* Перетворює текст на маленькі літери */
   letter-spacing: 0.04em; /* Визначає відстань між літерами в span, якщо потрібно */
-}
-
-.checkbox-label .privacy-policy-link {
   color: var(--link-color, #4d5ae5); /* Колір посилання */
-}
-
-.checkbox-label .privacy-policy-link-text {
   text-decoration: none; /* Відключення підкреслення для тексту посилання */
-}
-
-.checkbox-label .privacy-policy-link-text:hover {
   text-decoration: underline; /* Підкреслення при наведенні на посилання */
-}
-
-.checkbox-container {
-  margin-bottom: 24px; /* для визначення відступів між параграфом та наступним елементом */
 }
 
 .checkbox-container input[type="checkbox"]:checked + label span {
@@ -1069,6 +1053,7 @@ h6 {
     --checked-fill,
     #f4f4fd
   ); /* Колір заповнення для вибраного чекбоксу */
+  margin-bottom: 24px; /* для визначення відступів між параграфом та наступним елементом */
 }
 
 .checkbox-label span svg {
