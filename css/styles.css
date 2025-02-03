@@ -984,10 +984,6 @@ h6 {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Плавна зміна кольору бордера */
 }
 
-.input:focus {
-  border-color: #4d5ae5; /* Колір бордера при фокусі */
-}
-
 /* Іконка всередині полів вводу */
 .input-icon {
   position: absolute; /* Абсолютне позиціонування */
@@ -995,16 +991,6 @@ h6 {
   top: 50%; /* Центрування по вертикалі */
   transform: translateY(-50%); /* Центрування по вертикалі */
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Плавна зміна кольору */
-}
-
-.input-icon:hover {
-  background-color: rgba(46, 47, 66, 0.1);
-  border-color: rgba(46, 47, 66, 0.6);
-}
-
-/* Зміна кольору іконки при фокусі */
-.input:focus + .input-icon {
-  fill: #4d5ae5;
 }
 
 .textarea {
