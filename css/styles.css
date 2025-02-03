@@ -1025,10 +1025,6 @@ h6 {
   text-decoration: none; /* Прибирає підкреслення за замовчуванням */
 }
 
-.checkbox-label:hover {
-  text-decoration: underline; /* Додає підкреслення при наведенні */
-}
-
 .checkbox-container input[type="checkbox"]:checked + label span {
   background-color: var(
     --checked-bg,
@@ -1039,8 +1035,7 @@ h6 {
     --checked-fill,
     #f4f4fd
   ); /* Колір заповнення для вибраного чекбоксу */
-  margin-bottom: 24px; /* для визначення відступів між параграфом та наступним елементом */
-}
+  }
 
 .checkbox-label span svg {
   width: 10px; /* Ширина SVG-іконки */
