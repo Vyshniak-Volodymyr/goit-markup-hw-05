@@ -1077,9 +1077,11 @@ h6 {
   background-color: #4d5ae5; /* Початковий фон кнопки */
   border: none; /* Видаляємо рамку */
   border-radius: 4px; /* Радіус заокруглення */
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Плавна зміна кольору фону та тексту */
+
   margin: 0 auto; /* Центруємо кнопку по горизонталі */
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .submit-button:hover {
