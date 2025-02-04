@@ -995,10 +995,15 @@ h6 {
   border: 1px solid rgba(46, 47, 66, 0.4); /* Бордер */
   border-radius: 4px; /* Закруглення кутів */
   background-color: transparent; /* Прозорий фон */
-  padding-left: 38px; /* Відступ зліва для тексту */
-  outline: transparent; /* Прозорий контур */
+  padding-left: 10px; /* Відступ зліва для тексту */
+  outline: none; /* Без контуру */
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Плавна зміна кольору бордера */
 }
+
+.input:focus {
+  border-color: #4D5AE5; /* Зміна кольору рамки при фокусі */
+}
+
 
 /* Іконка всередині полів вводу */
 .input-icon {
