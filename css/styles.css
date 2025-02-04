@@ -1005,6 +1005,16 @@ h6 {
   outline: none; /* Прибирає стандартний контур при фокусі */
 }
 
+.input-icon:hover {
+  background-color: rgba(46, 47, 66, 0.1);
+  border-color: rgba(46, 47, 66, 0.6);
+}
+
+/* Зміна кольору іконки при фокусі */
+.input:focus + .input-icon {
+  fill: #4d5ae5;
+}
+
 /* Іконка всередині полів вводу */
 .input-icon {
   position: absolute; /* Абсолютне позиціонування */
